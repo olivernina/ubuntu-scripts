@@ -49,6 +49,7 @@ cd OpenCV
 mkdir build
 cd build
 cmake -DWITH_QT=ON -DWITH_OPENGL=ON -DFORCE_VTK=ON -DWITH_TBB=ON -DWITH_GDAL=ON -DWITH_XINE=ON -DBUILD_EXAMPLES=ON -DWITH_FFMPEG=OFF -DCUDA_GENERATION=Auto -DBUILD_TIFF=ON -DWITH_V4L=ON ..
+#-DWITH_GTK=ON  you might want to add this if you want to build with gtk for python support, etc
 make -j $(nproc)
 sudo make install
 sudo ldconfig
